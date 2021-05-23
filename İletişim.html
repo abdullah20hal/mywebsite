@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="İletişim.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function kontrol()
+            {
+                 var x=document.forms["iletisim"]["Name"].value;
+               if(x=="")
+               {
+                alert("adiniz giriniz");
+                return false;
+               }
+            
+               
+            }
+            function kontrol()
+            {
+                 var x=document.forms["iletisim"]["Soyad"].value;
+               if(x=="")
+               { alert("soyadiniz giriniz");
+               return false;
+            }
+            
+               
+            }
+            function kontrol()
+            {
+                 var x=document.forms["iletisim"]["Mesaj"].value;
+               if(x=="")
+               {
+                alert("mesajiniz giriniz");
+               return false;
+               }  
+            }
+           
+
+        </script>
+    </head>
+    <body>
+        <form action="İletişim.php" onsubmit="return kontrol()" method="POST" name="iletisim" >
+            <h2>bana mesaj yaz</h2>
+            <input type="text" placeholder="ad..." name="Name" id="id1" class="kuc" >  
+            <input type="text" placeholder="soyad..." name="Soyad" id="id2" class="kuc"><br>
+            <input type="email" placeholder="Eposta..." name="Email" id="id3" class="kuc"> <br>
+            <input type="tel" placeholder="Cep telefonu..." name="Telefonnumarasi" id="id4" class="kuc" minlength="8" maxlength="11" required> <br>
+            <input type="text" placeholder="mesaj..." id="id5" name="Mesaj" class="kuc" > 
+            <button type="submit" class="btn" name="gonder" value="clic" >Gonder</button>
+            <button type="reset" class="btn">Reset</button>
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=100014110484691"><img class="media" src="images/ff.png" alt=""></a>
+            <a href="https://wa.me/+905393836960?text=apo"><img class="media" src="images/watsup.png" alt=""></a>
+            <a href="mailto:abdullah.hallak70@gmail.com"><img class="media" src="images/email.png" alt=""></a>
+            <a href="https://maps.app.goo.gl/t5BahN9DGMWUdzQc7"><img class="media" src="images/maps.png" alt=""></a>
+        </form>
+    </body>
+</html>
+       
